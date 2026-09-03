@@ -51,7 +51,7 @@ def launch_cameras(context):
             'enable_depth': 'true',
             'rgb_camera.color_profile': '1280x720x30',
             'depth_module.depth_profile': '1280x720x30',
-            'pointcloud.enable': 'false',
+            'pointcloud.enable': 'true',
         }
 
         # Prefer serial number if available
