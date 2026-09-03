@@ -1,0 +1,7 @@
+namespace: robot
+cameras:
+  front:
+    port: "4-1"
+
+compression:
+  jpeg_quality: 80
