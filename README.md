@@ -24,24 +24,24 @@ The number of cameras, camera names, and USB ports are defined entirely in YAML.
 
 1. Identify the camera and assosiated serial number/port, I recommend plugging in the camera's one at a time and running the following command to note down the port they are attached to:
 
-    lsusb -t
+        lsusb -t
 
 2. clone repository
 
-    git clone https://github.com/ds2000hehe/multi_realsense.git
-    cd multi_realsense
+        git clone https://github.com/ds2000hehe/multi_realsense.git
+        cd multi_realsense
 
 3. change the config to add camera's and their usb ports
 
-    nano camera_conf/camera_setup.yaml
+        nano camera_conf/camera_setup.yaml
 
 4. build the docker container
 
-    docker compose build
+        docker compose build
 
 5. run container
 
-    docker compose up
+        docker compose up
 
 
 ## Frame Assignment
