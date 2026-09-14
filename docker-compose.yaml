@@ -1,0 +1,23 @@
+services:
+  camera:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ros2_camera
+
+    privileged: true
+
+    volumes:
+      - ./camera_conf:/camera_conf:ro
+
+    network_mode: host
+    ipc: host
+
+    environment:
+      ROS_DOMAIN_ID: 0
+
+    restart: unless-stopped
+
+    command:
+      ros2 launch camera_launch camera_full.launch.py config_file:=/camera_conf/camera_setup.yaml
