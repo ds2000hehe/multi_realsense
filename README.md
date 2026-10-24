@@ -6,7 +6,7 @@ The number of cameras, camera names, and USB ports are defined entirely in YAML.
 
 ## Features
 
-- ROS 2 Jazzy
+- ROS 2 Humble
 - Supports multiple Intel RealSense cameras
 - Camera count is determined by the YAML configuration
 - Camera names are defined in YAML
